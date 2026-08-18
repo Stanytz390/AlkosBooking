@@ -139,7 +139,7 @@ You need:
 ### Environment Variables
 
 The application uses:
-
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/Stanytz390/AlkosBooking)
 ```env
 MONGODB_URI=
 SESSION_SECRET=
@@ -150,5 +150,3 @@ SHOP_NAME=
 WHATSAPP_NUMBER=
 CONTACT_PHONE=
 GOOGLE_MAPS_URL=
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/Stanytz390/AlkosBooking)
