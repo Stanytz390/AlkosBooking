@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand footer-brand"><img src="/images/logo.jpg" alt=""><span><b>ALKOS</b><small>APARTMENTS</small></span></div>
+      <p class="muted">A private, modern stay in the heart of Geita.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="/#stay">Apartments</a><a href="/#gallery">Gallery</a><a href="/#amenities">Amenities</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:<%= settings.phone.replace(/\s/g,'') %>"><%= settings.phone %></a>
+      <a href="https://wa.me/<%= settings.whatsapp %>" target="_blank">WhatsApp</a>
+      <a href="<%= settings.mapUrl %>" target="_blank">Mseto, Geita</a>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span>© <%= new Date().getFullYear() %> <%= settings.propertyName %></span><span>Direct booking • No guest account required</span></div>
+</footer>
+<script src="/app.js"></script>
+</body></html>

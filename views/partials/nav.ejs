@@ -1,0 +1,19 @@
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a class="brand" href="/">
+      <img src="/images/logo.jpg" alt="ALKOS Apartments logo">
+      <span><b>ALKOS</b><small>APARTMENTS</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#stay"><%= lang === "sw" ? "Vyumba" : "Apartments" %></a>
+      <a href="/#amenities"><%= lang === "sw" ? "Huduma" : "Amenities" %></a>
+      <a href="/#gallery"><%= lang === "sw" ? "Picha" : "Gallery" %></a>
+      <a href="/#reviews"><%= lang === "sw" ? "Maoni" : "Reviews" %></a>
+    </div>
+    <div class="nav-actions">
+      <a class="lang" href="/?lang=<%= lang === "en" ? "sw" : "en" %>"><%= lang === "en" ? "SW" : "EN" %></a>
+      <a class="btn btn-gold btn-sm" href="#book"><%= lang === "sw" ? "Book Now" : "Book Now" %></a>
+    </div>
+    <button class="menu-btn" data-menu aria-label="Menu">☰</button>
+  </nav>
+</header>
