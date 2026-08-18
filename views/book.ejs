@@ -1,0 +1,28 @@
+<%- include("partials/head", {title: "Book " + unit.name}) %>
+<%- include("partials/nav") %>
+<main class="booking-page">
+  <div class="container booking-layout">
+    <div>
+      <a class="back-link" href="/">← Back to apartments</a>
+      <div class="book-visual"><img src="<%= unit.images[0] || '/images/living-1.jpg' %>" alt="<%= unit.name %>"></div>
+      <div class="thumb-row"><% unit.images.forEach(img=>{ %><img src="<%= img %>" alt=""><% }) %></div>
+    </div>
+    <div class="book-panel">
+      <span class="eyebrow">DIRECT RESERVATION</span>
+      <h1><%= unit.name %></h1>
+      <p><%= unit.description %></p>
+      <div class="price-big"><%= money(unit.price) %> <small>TZS / night</small></div>
+      <div class="chips"><% unit.amenities.forEach(a=>{ %><span><%= a %></span><% }) %></div>
+      <form method="post" action="/book" class="booking-form">
+        <input type="hidden" name="unitId" value="<%= unit._id %>">
+        <div class="form-row"><label>Full name<input name="guestName" required placeholder="Your full name"></label><label>WhatsApp / phone<input name="guestPhone" required placeholder="+255..."></label></div>
+        <div class="form-row"><label>Check-in<input type="date" name="checkIn" required></label><label>Check-out<input type="date" name="checkOut" required></label></div>
+        <label>Guests<select name="guests"><% for(let i=1;i<=unit.capacity;i++){ %><option value="<%= i %>"><%= i %> guest<%= i>1?"s":"" %></option><% } %></select></label>
+        <label>Special request / note<textarea name="note" rows="4" placeholder="Optional"></textarea></label>
+        <button class="btn btn-gold wide">Request booking via WhatsApp →</button>
+        <small class="form-note">No account required. Your request is checked against current availability before it is created.</small>
+      </form>
+    </div>
+  </div>
+</main>
+<%- include("partials/footer") %>
