@@ -1,0 +1,62 @@
+{
+  "name": "ALKOS Apartments Booking",
+  "description": "Premium apartment booking and availability management system for ALKOS Apartments, Geita.",
+  "repository": "https://github.com/Stanytz390/AlkosBooking",
+  "website": "https://github.com/Stanytz390/AlkosBooking",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "booking",
+    "apartments",
+    "hotel",
+    "geita",
+    "whatsapp"
+  ],
+  "success_url": "/",
+  "stack": "heroku-24",
+  "env": {
+    "MONGODB_URI": {
+      "description": "MongoDB connection string for bookings, apartments, reviews, gallery and settings.",
+      "required": true
+    },
+    "SESSION_SECRET": {
+      "description": "Secure session secret generated automatically by Heroku.",
+      "generator": "secret"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Password used to access the ALKOS Apartments admin dashboard.",
+      "required": true
+    },
+    "ADMIN_EMAIL": {
+      "description": "Administrator email address.",
+      "value": "admin@alkosapartments.com"
+    },
+    "NODE_ENV": {
+      "description": "Application environment.",
+      "value": "production"
+    },
+    "SHOP_NAME": {
+      "description": "Property name.",
+      "value": "ALKOS Apartments"
+    },
+    "WHATSAPP_NUMBER": {
+      "description": "WhatsApp number that receives booking notifications. International format without + or spaces.",
+      "value": "255797796163"
+    },
+    "CONTACT_PHONE": {
+      "description": "Primary property contact phone number.",
+      "value": "+255 797 796 163"
+    },
+    "GOOGLE_MAPS_URL": {
+      "description": "Google Maps location for ALKOS Apartments.",
+      "value": "https://maps.app.goo.gl/vrpbJNvEGuGo4KGn7"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
