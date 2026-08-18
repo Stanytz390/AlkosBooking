@@ -1,0 +1,23 @@
+{
+  "name": "alkos-apartments-booking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium apartment booking and management system for ALKOS Apartments, Geita, Tanzania.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20 <23",
+    "npm": ">=10"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.9.5"
+  }
+}
